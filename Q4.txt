@@ -1,0 +1,14 @@
+for 6464 (1940 in hex)
+
+ORG 0000H;
+CLR A;
+ORL A,#4FH;
+ANL A,#40H;
+MOV R0,A;
+CLR A;
+ORL A,#1FH;
+ANL A,#19H;
+MOV B,A;
+MOV A,R0;
+HERE: SJMP HERE;
+END;
